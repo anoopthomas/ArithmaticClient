@@ -1,0 +1,14 @@
+{
+  "routes":
+  [
+    { "path": "/","method" : "get", "callback": "application#arithmatic" }
+  ],
+  "filters":
+  [
+  	 { "path": "/", "callback": "" }
+  ],
+  "websockets":
+  [
+  	{ "event": "newArithmaticCalc", "callback": "arithmatic#receiveMessage"}
+  ]
+}
